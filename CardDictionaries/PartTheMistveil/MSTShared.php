@@ -22,7 +22,7 @@ function MSTAbilityCost($cardID): int
 
 function MSTCombatEffectActive($cardID, $attackID): bool
 {
-  global $mainPlayer, $combatChainState, $CCS_LinkBaseAttack, $CombatChain;
+  global $mainPlayer, $CS_NumBluePlayed, $combatChainState, $CCS_LinkBaseAttack, $CS_Transcended, $CombatChain;
   $from = $CombatChain->AttackCard()->From();
   $idArr = explode(",", $cardID);
   $cardID = $idArr[0];
